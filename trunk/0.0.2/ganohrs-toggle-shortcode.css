@@ -1,0 +1,418 @@
+/******************************************************************************
+ * Ganohr's Toggle Shortcode Ver 0.0.1 - 2018
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ *****************************************************************************/
+
+/******************************************************************************
+ * Suffixなし
+ *****************************************************************************/
+.toggle-wrap {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    clear: both;
+    color: #67c5ff;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+    color: #67c5ff;
+    transition: .4s;
+}
+
+.toggle-content {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content > br:first-child {
+    display: none;
+}
+
+.toggle-title::before {
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    color: #67c5ff;
+    transition: .4s;
+}
+
+.toggle-title:hover::before {
+    background: #67c5ff;
+    color: white;
+}
+
+#toggle-box,
+.toggle-wrap .toggle-content,
+.toggle-wrap > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap > input[type="checkbox"]:checked ~ .toggle-content {
+  display: block;
+}
+
+.toggle-wrap > input[type="checkbox"] ~ .toggle-title::before {
+    content: "+";
+}
+
+.toggle-wrap > input[type="checkbox"]:checked  ~ .toggle-title::before {
+    content: "-";
+}
+
+/******************************************************************************
+ * Suffix「1」
+ *****************************************************************************/
+.toggle-wrap-1 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    clear: both;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title-1 {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+
+}
+
+.toggle-content-1 {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content-1 > br:first-child {
+    display: none;
+}
+
+.toggle-title-1::before {
+    border-width: 1px;
+	border-style: solid;
+	border-color: #d0d0d0;
+    border-radius: 0.2em;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+}
+
+.toggle-title-1:hover::before {
+    background: #67c5ff;
+    color: white;
+}
+
+#toggle-box-1,
+.toggle-wrap-1 .toggle-content-1,
+.toggle-wrap-1 > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap-1 > input[type="checkbox"]:checked ~ .toggle-content-1 {
+  display: block;
+}
+
+.toggle-wrap-1 > input[type="checkbox"] ~ .toggle-title-1::before {
+    content: "+";
+}
+
+.toggle-wrap-1 > input[type="checkbox"]:checked  ~ .toggle-title-1::before {
+    content: "-";
+}
+
+/******************************************************************************
+ * Suffix「2」
+ *****************************************************************************/
+.toggle-wrap-2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    clear: both;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title-2 {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+
+}
+
+.toggle-content-2 {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content-2 > br:first-child {
+    display: none;
+}
+
+.toggle-title-2::before {
+    border-width: 1px;
+	border-style: solid;
+	border-color: #d0d0d0;
+    border-radius: 0.2em;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+}
+
+.toggle-title-2:hover::before {
+    background: #67c5ff;
+    color: white;
+}
+
+#toggle-box-2,
+.toggle-wrap-2 .toggle-content-2,
+.toggle-wrap-2 > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap-2 > input[type="checkbox"]:checked ~ .toggle-content-2 {
+  display: block;
+}
+
+.toggle-wrap-2 > input[type="checkbox"] ~ .toggle-title-2::before {
+    content: "+";
+}
+
+.toggle-wrap-2 > input[type="checkbox"]:checked  ~ .toggle-title-2::before {
+    content: "-";
+}
+
+/******************************************************************************
+ * Suffix「3」
+ *****************************************************************************/
+.toggle-wrap-3 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    clear: both;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title-3 {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+
+}
+
+.toggle-content-3 {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content-3 > br:first-child {
+    display: none;
+}
+
+.toggle-title-3::before {
+    border-width: 1px;
+	border-style: solid;
+	border-color: #d0d0d0;
+    border-radius: 0.2em;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+}
+
+.toggle-title-3:hover::before {
+    background: #67c5ff;
+    color: white;
+}
+
+#toggle-box-3,
+.toggle-wrap-3 .toggle-content-3,
+.toggle-wrap-3 > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap-3 > input[type="checkbox"]:checked ~ .toggle-content-3 {
+  display: block;
+}
+
+.toggle-wrap-3 > input[type="checkbox"] ~ .toggle-title-3::before {
+    content: "+";
+}
+
+.toggle-wrap-3 > input[type="checkbox"]:checked  ~ .toggle-title-3::before {
+    content: "-";
+}
+
+/******************************************************************************
+ * Suffix「4」
+ *****************************************************************************/
+.toggle-wrap-4 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    clear: both;
+    color: #333;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title-4 {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+
+}
+
+.toggle-content-4 {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content-4 > br:first-child {
+    display: none;
+}
+
+.toggle-title-4::before {
+    border-width: 1px;
+	border-style: solid;
+	border-color: #d0d0d0;
+    border-radius: 0.2em;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+}
+
+.toggle-title-4:hover::before {
+    background: #67c5ff;
+    color: white;
+}
+
+#toggle-box-4,
+.toggle-wrap-4 .toggle-content-4,
+.toggle-wrap-4 > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap-4 > input[type="checkbox"]:checked ~ .toggle-content-4 {
+  display: block;
+}
+
+.toggle-wrap-4 > input[type="checkbox"] ~ .toggle-title-4::before {
+    content: "+";
+}
+
+.toggle-wrap-4 > input[type="checkbox"]:checked  ~ .toggle-title-4::before {
+    content: "-";
+}
+
+/******************************************************************************
+ * Suffix「black」
+ *****************************************************************************/
+.toggle-wrap-black {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: black;
+    clear: both;
+    color: #eee;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.toggle-title-black {
+    cursor: pointer;
+    font-size: 120%;
+	font-weight: bold;
+    position: relative;
+    display: block;
+}
+
+.toggle-content-black {
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+
+.toggle-content-black > br:first-child {
+    display: none;
+}
+
+.toggle-title-black::before {
+    border-width: 1px;
+	border-style: solid;
+	border-color: #eee;
+    border-radius: 0.2em;
+    text-align: center;
+    width: 1.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+}
+
+.toggle-title-black:hover::before {
+    background: white;
+    color: black;
+}
+
+#toggle-box-black,
+.toggle-wrap-black .toggle-content-black,
+.toggle-wrap-black > input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrap-black > input[type="checkbox"]:checked ~ .toggle-content-black {
+  display: block;
+}
+
+.toggle-wrap-black > input[type="checkbox"] ~ .toggle-title-black::before {
+    content: "+";
+}
+
+.toggle-wrap-black > input[type="checkbox"]:checked  ~ .toggle-title-black::before {
+    content: "-";
+}
