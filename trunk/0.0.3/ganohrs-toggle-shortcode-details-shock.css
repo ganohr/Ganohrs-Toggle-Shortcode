@@ -1,0 +1,218 @@
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-details
+, .gnr-tgl-details1
+, .gnr-tgl-details2
+, .gnr-tgl-details3
+, .gnr-tgl-details4
+, .gnr-tgl-details5
+, .gnr-tgl-details6
+, .gnr-tgl-details7
+, .gnr-tgl-details8
+, .gnr-tgl-details9
+, .gnr-tgl-details10
+, .gnr-tgl-details11
+, .gnr-tgl-details12
+, .gnr-tgl-details13
+, .gnr-tgl-details14
+, .gnr-tgl-details15
+, .gnr-tgl-details16
+, .gnr-tgl-details17
+, .gnr-tgl-details18
+, .gnr-tgl-details19
+{
+    border-radius: 5px;
+    clear: both;
+    padding: 5px 10px;
+    background: linear-gradient(45deg, red,green,blue,orange,blue,green,red);
+    color: white;
+    border: 4px solid transparent;
+}
+.gnr-tgl-contents
+, .gnr-tgl-contents1
+, .gnr-tgl-contents2
+, .gnr-tgl-contents3
+, .gnr-tgl-contents4
+, .gnr-tgl-contents5
+, .gnr-tgl-contents6
+, .gnr-tgl-contents7
+, .gnr-tgl-contents8
+, .gnr-tgl-contents9
+, .gnr-tgl-contents10
+, .gnr-tgl-contents11
+, .gnr-tgl-contents12
+, .gnr-tgl-contents13
+, .gnr-tgl-contents14
+, .gnr-tgl-contents15
+, .gnr-tgl-contents16
+, .gnr-tgl-contents17
+, .gnr-tgl-contents18
+, .gnr-tgl-contents19
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #fff4, #fff8, #fff4);
+}
+.gnr-tgl-summary
+, .gnr-tgl-summary1
+, .gnr-tgl-summary2
+, .gnr-tgl-summary3
+, .gnr-tgl-summary4
+, .gnr-tgl-summary5
+, .gnr-tgl-summary6
+, .gnr-tgl-summary7
+, .gnr-tgl-summary8
+, .gnr-tgl-summary9
+, .gnr-tgl-summary10
+, .gnr-tgl-summary11
+, .gnr-tgl-summary12
+, .gnr-tgl-summary13
+, .gnr-tgl-summary14
+, .gnr-tgl-summary15
+, .gnr-tgl-summary16
+, .gnr-tgl-summary17
+, .gnr-tgl-summary18
+, .gnr-tgl-summary19
+{
+    border: none;
+    list-style: none;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    line-height: 40px;
+}
+.gnr-tgl-summary::-webkit-details-marker
+, .gnr-tgl-summary1::-webkit-details-marker
+, .gnr-tgl-summary2::-webkit-details-marker
+, .gnr-tgl-summary3::-webkit-details-marker
+, .gnr-tgl-summary4::-webkit-details-marker
+, .gnr-tgl-summary5::-webkit-details-marker
+, .gnr-tgl-summary6::-webkit-details-marker
+, .gnr-tgl-summary7::-webkit-details-marker
+, .gnr-tgl-summary8::-webkit-details-marker
+, .gnr-tgl-summary9::-webkit-details-marker
+, .gnr-tgl-summary10::-webkit-details-marker
+, .gnr-tgl-summary11::-webkit-details-marker
+, .gnr-tgl-summary12::-webkit-details-marker
+, .gnr-tgl-summary13::-webkit-details-marker
+, .gnr-tgl-summary14::-webkit-details-marker
+, .gnr-tgl-summary15::-webkit-details-marker
+, .gnr-tgl-summary16::-webkit-details-marker
+, .gnr-tgl-summary17::-webkit-details-marker
+, .gnr-tgl-summary18::-webkit-details-marker
+, .gnr-tgl-summary19::-webkit-details-marker
+{
+    display: none;
+}
+.gnr-tgl-summary:before
+, .gnr-tgl-summary1:before
+, .gnr-tgl-summary2:before
+, .gnr-tgl-summary3:before
+, .gnr-tgl-summary4:before
+, .gnr-tgl-summary5:before
+, .gnr-tgl-summary6:before
+, .gnr-tgl-summary7:before
+, .gnr-tgl-summary8:before
+, .gnr-tgl-summary9:before
+, .gnr-tgl-summary10:before
+, .gnr-tgl-summary11:before
+, .gnr-tgl-summary12:before
+, .gnr-tgl-summary13:before
+, .gnr-tgl-summary14:before
+, .gnr-tgl-summary15:before
+, .gnr-tgl-summary16:before
+, .gnr-tgl-summary17:before
+, .gnr-tgl-summary18:before
+, .gnr-tgl-summary19:before
+{
+    border-radius: 3px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+    border: solid 2px transparent;
+    background: linear-gradient(135deg, #fff4, #fff8, #fff4);
+    content: "＋";
+}
+details[open] .gnr-tgl-summary:before
+, details[open] .gnr-tgl-summary1:before
+, details[open] .gnr-tgl-summary2:before
+, details[open] .gnr-tgl-summary3:before
+, details[open] .gnr-tgl-summary4:before
+, details[open] .gnr-tgl-summary5:before
+, details[open] .gnr-tgl-summary6:before
+, details[open] .gnr-tgl-summary7:before
+, details[open] .gnr-tgl-summary8:before
+, details[open] .gnr-tgl-summary9:before
+, details[open] .gnr-tgl-summary10:before
+, details[open] .gnr-tgl-summary11:before
+, details[open] .gnr-tgl-summary12:before
+, details[open] .gnr-tgl-summary13:before
+, details[open] .gnr-tgl-summary14:before
+, details[open] .gnr-tgl-summary15:before
+, details[open] .gnr-tgl-summary16:before
+, details[open] .gnr-tgl-summary17:before
+, details[open] .gnr-tgl-summary18:before
+, details[open] .gnr-tgl-summary19:before
+{
+    content: "－";
+}
+.gnr-tgl-summary:hover:before
+, .gnr-tgl-summary1:hover:before
+, .gnr-tgl-summary2:hover:before
+, .gnr-tgl-summary3:hover:before
+, .gnr-tgl-summary4:hover:before
+, .gnr-tgl-summary5:hover:before
+, .gnr-tgl-summary6:hover:before
+, .gnr-tgl-summary7:hover:before
+, .gnr-tgl-summary8:hover:before
+, .gnr-tgl-summary9:hover:before
+, .gnr-tgl-summary10:hover:before
+, .gnr-tgl-summary11:hover:before
+, .gnr-tgl-summary12:hover:before
+, .gnr-tgl-summary13:hover:before
+, .gnr-tgl-summary14:hover:before
+, .gnr-tgl-summary15:hover:before
+, .gnr-tgl-summary16:hover:before
+, .gnr-tgl-summary17:hover:before
+, .gnr-tgl-summary18:hover:before
+, .gnr-tgl-summary19:hover:before
+{
+    border: solid 2px white;
+    background: red;
+    transition: .4s;
+}
+.gnr-tgl-wrap {
+    margin: unset;
+}
+.gnr-tgl-wrap table {
+    box-shadow: 0px 0px 3px 1px white;
+}
+.gnr-tgl-wrap table th
+, .gnr-tgl-wrap table td {
+    border: 1px solid #eee;
+}
+.gnr-tgl-wrap thead th
+, .gnr-tgl-wrap thead td {
+    color: white;
+    background: #282;
+}
+.gnr-tgl-wrap tbody tr:nth-child(even) th
+, .gnr-tgl-wrap tbody tr:nth-child(even) td {
+    color: #c00;
+    background: #ff0;
+}
+.gnr-tgl-wrap tbody tr:nth-child(odd) th
+, .gnr-tgl-wrap tbody tr:nth-child(odd) td {
+    color: #fff;
+    background: #c00;
+}

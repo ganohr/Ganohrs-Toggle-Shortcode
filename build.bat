@@ -23,6 +23,11 @@ del %zipfile%
 
 tar -a -c -f %zipfile% *
 
+set "basefile=..\..\release\ganohrs-toggle-shortcode.zip"
+del %basefile%
+
+copy %zipfile% %basefile%
+
 endlocal
 pause
 echo on
