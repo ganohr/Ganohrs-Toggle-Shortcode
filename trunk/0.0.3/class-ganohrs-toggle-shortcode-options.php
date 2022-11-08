@@ -142,6 +142,13 @@ if ( ! class_exists( 'ganohrs_toggle_shortcode_Options' ) ) :
 				'gts_options',
 				'gts_setting_section'
 			);
+			add_settings_field(
+				'enqueue_or_head',
+				'Enqueue Type',
+				array( $this, 'enqueue_type_callback' ),
+				'gts_options',
+				'gts_setting_section'
+			);
 		}
 
 		/**
@@ -154,9 +161,25 @@ if ( ! class_exists( 'ganohrs_toggle_shortcode_Options' ) ) :
 			$new_input = array();
 
 			$new_input['style'] = isset( $input['style'] ) ? $input['style'] : 'details-nornaml';
+			$new_input['enqueue_or_head'] = isset( $input['enqueue_or_head'] ) ? $input['enqueue_or_head'] : 'enqueue';
 			return $new_input;
 		}
 
+		/**
+		 * Enqueue Type変更用コールバック
+		 *
+		 * @return	   void
+		 */
+		public function enqueue_type_callback() {
+			$enqueue_type = is_array($this->options) ? $this->options['enqueue_or_head'] : '';
+			if ( strlen( $enqueue_type ) === 0 ) {
+				$enqueue_type = 'enqueue';
+			}
+			?>
+				<label for="enqueue_type_enqueue"><input id="enqueue_type_enqueue" type="radio" name="gts_options[enqueue_or_head]" <?php echo ($enqueue_type === 'enqueue' ? "checked" : "")?> value="enqueue" />Enqueue</label>
+				<label for="enqueue_type_head"	 ><input id="enqueue_type_head"    type="radio" name="gts_options[enqueue_or_head]" <?php echo ($enqueue_type === 'head'	? "checked" : "")?> value="head"	/>Head</label>
+			<?php
+		}
 		/**
 		 * スタイル変更用コールバック
 		 *

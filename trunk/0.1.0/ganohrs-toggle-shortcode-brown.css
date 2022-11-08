@@ -27,9 +27,10 @@
     clear: both;
     margin: 10px 0;
     padding: 5px 10px;
-    background: linear-gradient(45deg, red 33%,yellow 33%,yellow 67%, orange 67%,orange 100%);
-    color: black;
-    border: 1px solid yellow;
+    background: saddlebrown;
+    color: white;
+    border: 1px solid brown;
+    width: 100%;
 }
 
 .gnr-tgl-t
@@ -82,11 +83,8 @@
 , .gnr-tgl-c18
 , .gnr-tgl-c19
 {
-    margin-top: 10px;
     margin-left: 10px;
     padding: 15px 20px;
-    background: rgba(255,128,128,0.5);
-    border: 1px solid yellow;
 }
 
 .gnr-tgl-t:before
@@ -118,9 +116,8 @@
     display: inline-block;
     margin-right: 0.5em;
     transition: .4s;
-    border: solid 2px yellow;
-    background: yellow;
-    color: red;
+    border: solid 2px white;
+    color: white;
 }
 
 .gnr-tgl-t:hover:before
@@ -144,9 +141,8 @@
 , .gnr-tgl-t18:hover:before
 , .gnr-tgl-t19:hover:before
 {
-    border: solid 2px white;
-    background: red;
-    color: yellow;
+    background: white;
+    color: brown;
     transition: .4s;
 }
 
@@ -305,31 +301,28 @@
 {
     content: "－";
 }
+.gnr-tgl-wrap {
+    margin: unset;
+}
 .gnr-tgl-wrap table {
-    box-shadow: 0px 0px 3px 1px yellow;
+    box-shadow: 0px 0px 3px 1px white;
 }
 .gnr-tgl-wrap table th
 , .gnr-tgl-wrap table td {
-    border: 2px solid yellow;
+    border: 1px solid #eee;
 }
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
     color: white;
-    background: #e00;
+    background: #c33;
 }
-.gnr-tgl-wrap tbody tr:nth-child(2n+0) th:nth-child(2n+0)
-, .gnr-tgl-wrap tbody tr:nth-child(2n+0) td:nth-child(2n+0) {
-    background: linear-gradient(45deg, orange 33%,yellow 33%,yellow 66%, red 66%,red 100%);
+.gnr-tgl-wrap tbody tr:nth-child(even) th
+, .gnr-tgl-wrap tbody tr:nth-child(even) td {
+    color: brown;
+    background: white;
 }
-.gnr-tgl-wrap tbody tr:nth-child(2n+0) th:nth-child(2n+1)
-, .gnr-tgl-wrap tbody tr:nth-child(2n+0) td:nth-child(2n+1) {
-    background: linear-gradient(45deg, red 33%,yellow 33%,yellow 66%, orange 66%,orange 100%);
-}
-.gnr-tgl-wrap tbody tr:nth-child(2n+1) th:nth-child(2n+0)
-, .gnr-tgl-wrap tbody tr:nth-child(2n+1) td:nth-child(2n+0) {
-    background: linear-gradient(-45deg, red 33%,yellow 33%,yellow 66%, orange 66%,orange 100%);
-}
-.gnr-tgl-wrap tbody tr:nth-child(2n+1) th:nth-child(2n+1)
-, .gnr-tgl-wrap tbody tr:nth-child(2n+1) td:nth-child(2n+1) {
-    background: linear-gradient(-45deg, orange 33%,yellow 33%,yellow 66%, red 66%,red 100%);
+.gnr-tgl-wrap tbody tr:nth-child(odd) th
+, .gnr-tgl-wrap tbody tr:nth-child(odd) td {
+    color: white;
+    background: brown;
 }

@@ -3,7 +3,7 @@
 Plugin Name: Ganohr's Toggle Shortcode
 Plugin URI: https://ganohr.net/blog/ganohrs-toggle-shortcode/
 Description: You can insert to WordPress that toggle-code for CSS-based Or details tag. 簡単にCSSベース又はdetailsタグによる折りたたみコードをワードプレスへ追加できます。<strong>Usage（使い方）: </strong> &#091;toggle&nbsp;title="title&nbsp;here"&nbsp;(optional)load="open&nbsp;/&nbsp;close"&nbsp;(optional)suffix="(empty)&nbsp;or&nbsp;1&nbsp;to&nbsp;20&nbsp;or&nbsp;black&nbsp;or&nbsp;details..."&#093;contents&nbsp;here&#091;/toggle&#093;
-Version: 0.0.3
+Version: 0.1.0
 Author: Ganohr
 Author URI: https://ganohr.net/
 License: GPL2
@@ -122,7 +122,7 @@ EOT;
 		$ver = "0.0.2";
 
 		// enqueue/headに応じてCSSを追加する
-		if( ganohrs_toggle_shortcode_css_enqueue_or_head() == 'enqueue' ) {
+		if( ganohrs_toggle_shortcode_css_enqueue_or_head() === 'enqueue' ) {
 			// enqueue
 
 			// スタイルシートをエンキューする
@@ -158,6 +158,14 @@ EOT;
 	// ※ 'head'なら「add_action」で「wp_head」にアクションをフックして追加
 	// ※ 基本はenqueueを推奨
 	function ganohrs_toggle_shortcode_css_enqueue_or_head() {
+		$option = get_option( 'gts_options' );
+		if ( $option ) {
+			$enqueue_or_head = @$option['enqueue_or_head'];
+			if ( ! $enqueue_or_head || strlen( $enqueue_or_head ) == 0 ) {
+				$enqueue_or_head = 'enqueue';
+			}
+			return $enqueue_or_head;
+		}
 		return 'enqueue';
 	}
 
@@ -165,17 +173,17 @@ EOT;
 	function ganohrs_toggle_shortcode_get_css_style() {
 		$option = get_option( 'gts_options' );
 		if ( $option ) {
-			$style = $option['style'];
+			$style = @$option['style'];
 			if ( ! $style || strlen( $style ) == 0 ) {
-				$style = 'normal';
+				$style = 'details-normal';
 			}
 			return $style;
 		}
-		return 'normal';
+		return 'details-normal';
 	}
 
 	// CSS追加アクションを定義
-	if(ganohrs_toggle_shortcode_css_enqueue_or_head() == 'head') {
+	if(ganohrs_toggle_shortcode_css_enqueue_or_head() === 'head') {
 		add_action(
 			'wp_head',
 			'ganohrs_toggle_shortcode_load_css'
