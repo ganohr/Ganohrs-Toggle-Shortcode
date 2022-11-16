@@ -37,6 +37,7 @@ A. Please chose not named "Details xxx" style.
 
 
 == Changelog ==
+0.1.1 Append Option "Output CSS When AMP", And any updated.
 0.1.0 Append Option "Enqueue Type", And any updated.
 0.0.3 Append "Details" styles, And any updated.
 0.0.2 Change "readme.txt". And any updated.
