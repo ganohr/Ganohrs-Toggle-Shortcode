@@ -1,0 +1,1178 @@
+@charset "utf-8";
+
+/*! Ganohr's Toggle Shortcode Ver 0.2.0 - 2023
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+
+/* Normal / Default Style **********************************************************************************************/
+.gnr-tgl-details,
+.gnr-tgl-detailsnormal {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #fbfbfb;
+	color: #2299dd;
+	border: 1px solid #d0d0d0;
+}
+
+.gnr-tgl-contents,
+.gnr-tgl-contentsnormal {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summary,
+.gnr-tgl-summarynormal {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summary::-webkit-details-marker,
+.gnr-tgl-summarynormal::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summary:before,
+.gnr-tgl-summarynormal:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px #2299dd;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summary:before,
+details[open] .gnr-tgl-summarynormal:before {
+	content: "－";
+}
+
+.gnr-tgl-summary:hover:before,
+.gnr-tgl-summarynormal:hover:before {
+	background: #0279bf;
+	color: white;
+	transition: .4s;
+}
+
+/* Black Style **********************************************************************************************/
+.gnr-tgl-detailsblack {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: black;
+	color: white;
+	border: 1px solid white;
+}
+
+.gnr-tgl-contentsbalck {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarybalck {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarybalck::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarybalck:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarybalck:before {
+	content: "－";
+}
+
+.gnr-tgl-summarybalck:hover:before {
+	background: white;
+	color: black;
+	transition: .4s;
+}
+
+/* Blue Style **********************************************************************************************/
+.gnr-tgl-detailsblue {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: blue;
+	color: white;
+	border: 1px solid white;
+}
+
+.gnr-tgl-contentsblue {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryblue {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryblue::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryblue:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryblue:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryblue:hover:before {
+	background: white;
+	color: blue;
+	transition: .4s;
+}
+
+/* Brown Style **********************************************************************************************/
+.gnr-tgl-detailsbrown {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: saddlebrown;
+	color: white;
+	border: 1px solid brown;
+}
+
+.gnr-tgl-contentsbrown {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarybrown {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarybrown::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarybrown:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarybrown:before {
+	content: "－";
+}
+
+.gnr-tgl-summarybrown:hover:before {
+	background: white;
+	color: brown;
+	transition: .4s;
+}
+
+/* Facebook Style **********************************************************************************************/
+.gnr-tgl-detailsfacebook {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #3b5998;
+	color: white;
+	border: none;
+}
+
+.gnr-tgl-contentsfacebook {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryfacebook {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryfacebook::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryfacebook:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background-color: white;
+	color: #3b5998;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryfacebook:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryfacebook:hover:before {
+	background: #3b5998;
+	color: white;
+	transition: .4s;
+}
+
+/* Gold Style **********************************************************************************************/
+.gnr-tgl-detailsgold {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: linear-gradient(to top left, #da8e00, #edac06, #f7de05);
+	color: #7c6a03;
+}
+
+.gnr-tgl-contentsgold {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px 20px;
+	border-radius: 3px;
+	background: linear-gradient(to top left, rgba(128, 128, 128, 0.3), rgba(255, 255, 255, 0.5));
+}
+
+.gnr-tgl-summarygold {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarygold::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarygold:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	background: linear-gradient(to top left, #da8e00, #edac06, #f7de05);
+	color: #7c6a03;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarygold:before {
+	content: "－";
+}
+
+.gnr-tgl-summarygold:hover:before {
+	background: linear-gradient(to top left, #ea9e10, #fdbc16, #ffee15);
+	color: white;
+	transition: .4s;
+}
+
+/* Gray Style **********************************************************************************************/
+.gnr-tgl-detailsgray {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #ccc;
+	color: #555;
+	border: 1px solid #888;
+}
+
+.gnr-tgl-contentsgray {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarygray {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarygray::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarygray:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background: white;
+	color: #888;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarygray:before {
+	content: "－";
+}
+
+.gnr-tgl-summarygray:hover:before {
+	border: solid 2px white;
+	background: #888;
+	color: white;
+	transition: .4s;
+}
+
+/* Green Style **********************************************************************************************/
+.gnr-tgl-detailsgreen {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: lightgreen;
+	color: #286c28;
+	border: 1px solid #286c28;
+}
+
+.gnr-tgl-contentsgreen {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarygreen {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.gnr-tgl-summarygreen::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarygreen:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 1.5em;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	background-color: white;
+	color: #286c28;
+	content: "+";
+}
+
+details[open]green .gnr-tgl-summary:before {
+	content: "-";
+}
+
+.gnr-tgl-summarygreen:hover:before {
+	background: #286c28;
+	color: white;
+	transition: .4s;
+}
+
+/* Hatena Style **********************************************************************************************/
+.gnr-tgl-detailshatena {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #2c6ebd;
+	color: white;
+	border: none;
+}
+
+.gnr-tgl-contentshatena {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryhatena {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryhatena::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryhatena:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background-color: white;
+	color: #2c6ebd;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryhatena:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryhatena:hover:before {
+	background: #2c6ebd;
+	color: white;
+	transition: .4s;
+}
+
+/* Ice Style **********************************************************************************************/
+.gnr-tgl-detailsice {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: aliceblue;
+	color: #618edf;
+	border: 1px solid cyan;
+}
+
+.gnr-tgl-contentsice {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryice {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryice::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryice:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px aqua;
+	color: aqua;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryice:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryice:hover:before {
+	background: aqua;
+	color: white;
+	transition: .4s;
+}
+
+/* Line Style **********************************************************************************************/
+.gnr-tgl-detailsline {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #00c300;
+	color: white;
+	border: none;
+}
+
+.gnr-tgl-contentsline {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryline {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryline::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryline:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background-color: white;
+	color: #00c300;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryline:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryline:hover:before {
+	background: #00c300;
+	color: white;
+	transition: .4s;
+}
+
+/* Navy Style **********************************************************************************************/
+.gnr-tgl-detailsnavy {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: navy;
+	color: white;
+	border: 1px solid cornflowerblue;
+}
+
+.gnr-tgl-contentsnavy {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarynavy {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarynavy::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarynavy:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarynavy:before {
+	content: "－";
+}
+
+.gnr-tgl-summarynavy:hover:before {
+	background: white;
+	color: navy;
+	transition: .4s;
+}
+
+/* Pink Style **********************************************************************************************/
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-detailspink {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #fdf5f9;
+	color: #d07;
+	border: 1px solid hotpink;
+}
+
+.gnr-tgl-contentspink {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarypink {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarypink::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarypink:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px hotpink;
+	color: hotpink;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarypink:before {
+	content: "－";
+}
+
+.gnr-tgl-summary:hoverpink:before {
+	background: hotpink;
+	color: white;
+	transition: .4s;
+}
+
+/* Pocket Style **********************************************************************************************/
+.gnr-tgl-detailspocket {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #ef4056;
+	color: white;
+	border: none;
+}
+
+.gnr-tgl-contentspocket {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarypocket {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarypocket::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarypocket:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background-color: white;
+	color: #ef4056;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarypocket:before {
+	content: "－";
+}
+
+.gnr-tgl-summarypocket:hover:before {
+	background: #ef4056;
+	color: white;
+	transition: .4s;
+}
+
+/* Purple Style **********************************************************************************************/
+.gnr-tgl-detailspurple {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #94f;
+	color: white;
+}
+
+.gnr-tgl-contentspurple {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarypurple {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarypurple::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarypurple:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	color: white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarypurple:before {
+	content: "－";
+}
+
+.gnr-tgl-summary:hoverpurple:before {
+	background: honeydew;
+	color: mediumpurple;
+	transition: .4s;
+}
+
+/* Red Style **********************************************************************************************/
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-detailsred {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #e00;
+	color: white;
+	border: 1px solid white;
+}
+
+.gnr-tgl-contentsred {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryred {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryred::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryred:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryred:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryred:hover:before {
+	background: white;
+	color: #e00;
+	transition: .4s;
+}
+
+/* Shock Style **********************************************************************************************/
+.gnr-tgl-detailsshock {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: linear-gradient(45deg, red, green, blue, orange, blue, green, red);
+	color: white;
+	border: 4px solid transparent;
+}
+
+.gnr-tgl-contentsshock {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	background: linear-gradient(135deg, #fff4, #fff8, #fff4);
+}
+
+.gnr-tgl-summaryshock {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryshock::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryshock:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px transparent;
+	background: linear-gradient(135deg, #fff4, #fff8, #fff4);
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryshock:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryshock:hover:before {
+	border: solid 2px white;
+	background: red;
+	transition: .4s;
+}
+
+/* Twitter Style **********************************************************************************************/
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-detailstwitter {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #1da1f2;
+	color: white;
+	border: none;
+}
+
+.gnr-tgl-contentstwitter {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarytwitter {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarytwitter::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarytwitter:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background-color: white;
+	color: #1da1f2;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarytwitter:before {
+	content: "－";
+}
+
+.gnr-tgl-summarytwitter:hover:before {
+	background: #1da1f2;
+	color: white;
+	transition: .4s;
+}
+
+/* Vivid Style **********************************************************************************************/
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-detailsvivid {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: linear-gradient(45deg, red 33%, yellow 33%, yellow 67%, orange 67%, orange 100%);
+	color: black;
+	border: 1px solid yellow;
+}
+
+.gnr-tgl-contentsvivid {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px 20px;
+	border-radius: 3px;
+	background: rgba(255, 128, 128, 0.5);
+	border: 1px solid yellow;
+}
+
+.gnr-tgl-summaryvivid {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryvivid {
+	display: none;
+}
+
+.gnr-tgl-summaryvivid:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px white;
+	background: red;
+	color: white;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryvivid:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryvivid:hover:before {
+	border: solid 2px orange;
+	background: white;
+	color: red;
+	transition: .4s;
+}
+
+/* White Style **********************************************************************************************/
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-detailswhite {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #fcfcfc;
+	color: #666;
+	border: 1px solid #aaa;
+}
+
+.gnr-tgl-contentswhite {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summarywhite {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summarywhite::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summarywhite:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px #ccc;
+	color: #666;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summarywhite:before {
+	content: "－";
+}
+
+.gnr-tgl-summarywhite:hover:before {
+	background: #666;
+	color: white;
+	transition: .4s;
+}
+
+/* Yellow Style **********************************************************************************************/
+.gnr-tgl-detailsyellow {
+	border-radius: 5px;
+	clear: both;
+	padding: 5px 10px;
+	background: #ffe;
+	color: #807811;
+	border: 1px solid gold;
+}
+
+.gnr-tgl-contentsyellow {
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-summaryyellow {
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-summaryyellow::-webkit-details-marker {
+	display: none;
+}
+
+.gnr-tgl-summaryyellow:before {
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	border: solid 2px goldenrod;
+	color: goldenrod;
+	content: "＋";
+}
+
+details[open] .gnr-tgl-summaryyellow:before {
+	content: "－";
+}
+
+.gnr-tgl-summaryyellow:hover:before {
+	background: goldenrod;
+	color: lemonchiffon;
+	transition: .4s;
+}
+
+/* end of file. */

@@ -1,6 +1,4 @@
-@charset "utf-8";
-
-/*! Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
+/* Ganohr's Toggle Shortcode Ver 0.0.3 - 2022
  * Programmed by https://ganohr.net/
  * You can use for Free. Licensed as GPLv2.
  */
@@ -25,12 +23,12 @@
 , .gnr-tgl-details18
 , .gnr-tgl-details19
 {
-	border-radius: 5px;
-	clear: both;
-	padding: 5px 10px;
-	background: #ffe;
-	color: #807811;
-	border: 1px solid gold;
+    border-radius: 5px;
+    clear: both;
+    padding: 5px 10px;
+    background: #e00;
+    color: white;
+    border: 1px solid white;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -53,8 +51,8 @@
 , .gnr-tgl-contents18
 , .gnr-tgl-contents19
 {
-	margin-left: 10px;
-	padding: 15px 20px;
+    margin-left: 10px;
+    padding: 15px 20px;
 }
 .gnr-tgl-summary
 , .gnr-tgl-summary1
@@ -77,14 +75,14 @@
 , .gnr-tgl-summary18
 , .gnr-tgl-summary19
 {
-	border: none;
-	list-style: none;
-	cursor: pointer;
-	font-size: 120%;
-	font-weight: bold;
-	position: relative;
-	display: block;
-	line-height: 40px;
+    border: none;
+    list-style: none;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    line-height: 40px;
 }
 .gnr-tgl-summary::-webkit-details-marker
 , .gnr-tgl-summary1::-webkit-details-marker
@@ -107,7 +105,7 @@
 , .gnr-tgl-summary18::-webkit-details-marker
 , .gnr-tgl-summary19::-webkit-details-marker
 {
-	display: none;
+    display: none;
 }
 .gnr-tgl-summary:before
 , .gnr-tgl-summary1:before
@@ -130,17 +128,16 @@
 , .gnr-tgl-summary18:before
 , .gnr-tgl-summary19:before
 {
-	border-radius: 3px;
-	text-align: center;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	display: inline-block;
-	margin-right: 0.5em;
-	transition: .4s;
-	border: solid 2px goldenrod;
-	color: goldenrod;
-	content: "＋";
+    border-radius: 3px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: .4s;
+    border: solid 2px white;
+    content: "＋";
 }
 details[open] .gnr-tgl-summary:before
 , details[open] .gnr-tgl-summary1:before
@@ -163,7 +160,7 @@ details[open] .gnr-tgl-summary:before
 , details[open] .gnr-tgl-summary18:before
 , details[open] .gnr-tgl-summary19:before
 {
-	content: "－";
+    content: "－";
 }
 .gnr-tgl-summary:hover:before
 , .gnr-tgl-summary1:hover:before
@@ -186,29 +183,29 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: goldenrod;
-	color: lemonchiffon;
-	transition: .4s;
+    background: white;
+    color: #e00;
+    transition: .4s;
 }
 .gnr-tgl-wrap table {
-	box-shadow: 0px 0px 3px 1px white;
+    box-shadow: 0px 0px 3px 1px white;
 }
 .gnr-tgl-wrap table th
 , .gnr-tgl-wrap table td {
-	border: 1px solid #eee;
+    border: 1px solid #eee;
 }
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
-	color: white;
-	background: #907321;
+    color: white;
+    background: #d22;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #fff;
-	background: #807811;
+    color: #e00;
+    background: white;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
-	color: #807811;
-	background: #fff;
+    color: white;
+    background: #e00;
 }

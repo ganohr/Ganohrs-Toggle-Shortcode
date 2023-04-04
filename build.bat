@@ -15,6 +15,8 @@ rem copy *.md %outpath%\
 copy *.txt %outpath%\
 copy *.css %outpath%\
 copy *.php %outpath%\
+del %outpath%\debug*.php
+del %outpath%\version.txt
 
 cd %outpath%
 
