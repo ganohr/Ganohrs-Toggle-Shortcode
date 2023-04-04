@@ -3,7 +3,7 @@ Contributors: Ganohr
 Tags: Toggle,CSS,AMP
 Donate link: http://amzn.asia/gw9HHbg
 Requires at least: 4.0
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 5.0
 Stable tag: 0.2.0
 License: GPLv2
