@@ -28,9 +28,9 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: lightgreen;
-	color: #286c28;
-	border: 1px solid #286c28;
+	background: #ffe;
+	color: #807811;
+	border: 1px solid gold;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -138,9 +138,8 @@
 	display: inline-block;
 	margin-right: 0.5em;
 	transition: .4s;
-	border: solid 2px white;
-	background-color: white;
-	color: #286c28;
+	border: solid 2px goldenrod;
+	color: goldenrod;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -187,8 +186,8 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #286c28;
-	color: white;
+	background: goldenrod;
+	color: lemonchiffon;
 	transition: .4s;
 }
 .gnr-tgl-wrap table {
@@ -201,15 +200,15 @@ details[open] .gnr-tgl-summary:before
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
 	color: white;
-	background: #286c28;
+	background: #907321;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #2b7e2b;
-	background: white;
+	color: #fff;
+	background: #807811;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
-	color: white;
-	background: #2b7e2b;
+	color: #807811;
+	background: #fff;
 }

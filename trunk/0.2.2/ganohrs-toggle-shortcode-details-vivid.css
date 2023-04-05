@@ -28,9 +28,9 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: lightgreen;
-	color: #286c28;
-	border: 1px solid #286c28;
+	background: linear-gradient(45deg, red 33%,yellow 33%,yellow 67%, orange 67%,orange 100%);
+	color: black;
+	border: 1px solid yellow;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -53,8 +53,12 @@
 , .gnr-tgl-contents18
 , .gnr-tgl-contents19
 {
+	margin-top: 10px;
 	margin-left: 10px;
 	padding: 15px 20px;
+	border-radius: 3px;
+	background: rgba(255,128,128,0.5);
+	border: 1px solid yellow;
 }
 .gnr-tgl-summary
 , .gnr-tgl-summary1
@@ -139,8 +143,8 @@
 	margin-right: 0.5em;
 	transition: .4s;
 	border: solid 2px white;
-	background-color: white;
-	color: #286c28;
+	background: red;
+	color: white;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -187,29 +191,36 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #286c28;
-	color: white;
+	border: solid 2px orange;
+	background: white;
+	color: red;
 	transition: .4s;
 }
 .gnr-tgl-wrap table {
-	box-shadow: 0px 0px 3px 1px white;
+	box-shadow: 0px 0px 3px 1px yellow;
 }
 .gnr-tgl-wrap table th
 , .gnr-tgl-wrap table td {
-	border: 1px solid #eee;
+	border: 2px solid yellow;
 }
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
 	color: white;
-	background: #286c28;
+	background: #e00;
 }
-.gnr-tgl-wrap tbody tr:nth-child(even) th
-, .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #2b7e2b;
-	background: white;
+.gnr-tgl-wrap tbody tr:nth-child(2n+0) th:nth-child(2n+0)
+, .gnr-tgl-wrap tbody tr:nth-child(2n+0) td:nth-child(2n+0) {
+	background: linear-gradient(45deg, orange 33%,yellow 33%,yellow 66%, red 66%,red 100%);
 }
-.gnr-tgl-wrap tbody tr:nth-child(odd) th
-, .gnr-tgl-wrap tbody tr:nth-child(odd) td {
-	color: white;
-	background: #2b7e2b;
+.gnr-tgl-wrap tbody tr:nth-child(2n+0) th:nth-child(2n+1)
+, .gnr-tgl-wrap tbody tr:nth-child(2n+0) td:nth-child(2n+1) {
+	background: linear-gradient(45deg, red 33%,yellow 33%,yellow 66%, orange 66%,orange 100%);
+}
+.gnr-tgl-wrap tbody tr:nth-child(2n+1) th:nth-child(2n+0)
+, .gnr-tgl-wrap tbody tr:nth-child(2n+1) td:nth-child(2n+0) {
+	background: linear-gradient(-45deg, red 33%,yellow 33%,yellow 66%, orange 66%,orange 100%);
+}
+.gnr-tgl-wrap tbody tr:nth-child(2n+1) th:nth-child(2n+1)
+, .gnr-tgl-wrap tbody tr:nth-child(2n+1) td:nth-child(2n+1) {
+	background: linear-gradient(-45deg, orange 33%,yellow 33%,yellow 66%, red 66%,red 100%);
 }

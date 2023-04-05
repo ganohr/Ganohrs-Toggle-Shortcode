@@ -28,9 +28,8 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: lightgreen;
-	color: #286c28;
-	border: 1px solid #286c28;
+	background: linear-gradient(to top left, #da8e00, #edac06,#f7de05);
+	color: #7c6a03;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -53,8 +52,11 @@
 , .gnr-tgl-contents18
 , .gnr-tgl-contents19
 {
+	margin-top: 10px;
 	margin-left: 10px;
 	padding: 15px 20px;
+	border-radius: 3px;
+	background: linear-gradient(to top left, rgba(128,128,128,0.3), rgba(255,255,255,0.5));
 }
 .gnr-tgl-summary
 , .gnr-tgl-summary1
@@ -138,9 +140,8 @@
 	display: inline-block;
 	margin-right: 0.5em;
 	transition: .4s;
-	border: solid 2px white;
-	background-color: white;
-	color: #286c28;
+	background: linear-gradient(to top left, #da8e00, #edac06,#f7de05);
+	color: #7c6a03;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -187,7 +188,7 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #286c28;
+	background: linear-gradient(to top left, #ea9e10, #fdbc16,#ffee15);
 	color: white;
 	transition: .4s;
 }
@@ -201,15 +202,15 @@ details[open] .gnr-tgl-summary:before
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
 	color: white;
-	background: #286c28;
+	background: #7c6a03;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #2b7e2b;
+	color: #8f7020;
 	background: white;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
 	color: white;
-	background: #2b7e2b;
+	background: #8f7020;
 }

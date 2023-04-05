@@ -28,9 +28,9 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: lightgreen;
-	color: #286c28;
-	border: 1px solid #286c28;
+	background: #fcfcfc;
+	color: #666;
+	border: 1px solid #aaa;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -138,9 +138,8 @@
 	display: inline-block;
 	margin-right: 0.5em;
 	transition: .4s;
-	border: solid 2px white;
-	background-color: white;
-	color: #286c28;
+	border: solid 2px #ccc;
+	color: #666;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -187,29 +186,27 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #286c28;
+	background: #666;
 	color: white;
 	transition: .4s;
 }
 .gnr-tgl-wrap table {
-	box-shadow: 0px 0px 3px 1px white;
+	box-shadow: 0px 0px 3px 1px gray;
 }
 .gnr-tgl-wrap table th
 , .gnr-tgl-wrap table td {
-	border: 1px solid #eee;
+	color: #444;
+	border: 1px solid #ddd;
 }
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
-	color: white;
-	background: #286c28;
+	background: #ccc;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #2b7e2b;
-	background: white;
+	background: #fff;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
-	color: white;
-	background: #2b7e2b;
+	background: #eee;
 }
