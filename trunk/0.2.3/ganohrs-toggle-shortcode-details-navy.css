@@ -4,6 +4,9 @@
  * Programmed by https://ganohr.net/
  * You can use for Free. Licensed as GPLv2.
  */
+.gnr-tgl-wrap {
+	margin: unset;
+}
 .gnr-tgl-details
 , .gnr-tgl-details1
 , .gnr-tgl-details2
@@ -28,9 +31,9 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: #fefefe;
-	color: #27c;
-	border: 1px solid #d0d0d0;
+	background: navy;
+	color: white;
+	border: 1px solid cornflowerblue;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -138,7 +141,7 @@
 	display: inline-block;
 	margin-right: 0.5em;
 	transition: .4s;
-	border: solid 2px #2299dd;
+	border: solid 2px white;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -185,8 +188,8 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #0279bf;
-	color: white;
+	background: white;
+	color: navy;
 	transition: .4s;
 }
 .gnr-tgl-wrap table {
@@ -199,15 +202,15 @@ details[open] .gnr-tgl-summary:before
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
 	color: white;
-	background: #1177aa;
+	background: navy;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #0279bf;
+	color: #234c95;
 	background: white;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
 	color: white;
-	background: #0279bf;
+	background: #234c95;
 }

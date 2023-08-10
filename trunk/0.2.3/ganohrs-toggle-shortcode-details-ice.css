@@ -28,9 +28,9 @@
 	border-radius: 5px;
 	clear: both;
 	padding: 5px 10px;
-	background: #fefefe;
-	color: #27c;
-	border: 1px solid #d0d0d0;
+	background: aliceblue;
+	color: #618edf;
+	border: 1px solid cyan;
 }
 .gnr-tgl-contents
 , .gnr-tgl-contents1
@@ -138,7 +138,8 @@
 	display: inline-block;
 	margin-right: 0.5em;
 	transition: .4s;
-	border: solid 2px #2299dd;
+	border: solid 2px aqua;
+	color: aqua;
 	content: "＋";
 }
 details[open] .gnr-tgl-summary:before
@@ -185,7 +186,7 @@ details[open] .gnr-tgl-summary:before
 , .gnr-tgl-summary18:hover:before
 , .gnr-tgl-summary19:hover:before
 {
-	background: #0279bf;
+	background: aqua;
 	color: white;
 	transition: .4s;
 }
@@ -199,15 +200,15 @@ details[open] .gnr-tgl-summary:before
 .gnr-tgl-wrap thead th
 , .gnr-tgl-wrap thead td {
 	color: white;
-	background: #1177aa;
+	background: #618edf;
 }
 .gnr-tgl-wrap tbody tr:nth-child(even) th
 , .gnr-tgl-wrap tbody tr:nth-child(even) td {
-	color: #0279bf;
+	color: #3277c8;
 	background: white;
 }
 .gnr-tgl-wrap tbody tr:nth-child(odd) th
 , .gnr-tgl-wrap tbody tr:nth-child(odd) td {
 	color: white;
-	background: #0279bf;
+	background: #3277c8;
 }

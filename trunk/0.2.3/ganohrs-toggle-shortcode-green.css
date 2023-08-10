@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/*! Ganohr's Toggle Shortcode Ver 0.0.2 - 2019
+ * Programmed by https://ganohr.net/
+ * You can use for Free. Licensed as GPLv2.
+ */
+.gnr-tgl-w
+, .gnr-tgl-w1
+, .gnr-tgl-w2
+, .gnr-tgl-w3
+, .gnr-tgl-w4
+, .gnr-tgl-w5
+, .gnr-tgl-w6
+, .gnr-tgl-w7
+, .gnr-tgl-w8
+, .gnr-tgl-w9
+, .gnr-tgl-w10
+, .gnr-tgl-w11
+, .gnr-tgl-w12
+, .gnr-tgl-w13
+, .gnr-tgl-w14
+, .gnr-tgl-w15
+, .gnr-tgl-w16
+, .gnr-tgl-w17
+, .gnr-tgl-w18
+, .gnr-tgl-w19
+{
+	border-radius: 5px;
+	clear: both;
+	margin: 10px 0;
+	padding: 5px 10px;
+	background: lightgreen;
+	color: seagreen;
+	border: 1px solid seagreen;
+}
+
+.gnr-tgl-t
+, .gnr-tgl-t1
+, .gnr-tgl-t2
+, .gnr-tgl-t3
+, .gnr-tgl-t4
+, .gnr-tgl-t5
+, .gnr-tgl-t6
+, .gnr-tgl-t7
+, .gnr-tgl-t8
+, .gnr-tgl-t9
+, .gnr-tgl-t10
+, .gnr-tgl-t11
+, .gnr-tgl-t12
+, .gnr-tgl-t13
+, .gnr-tgl-t14
+, .gnr-tgl-t15
+, .gnr-tgl-t16
+, .gnr-tgl-t17
+, .gnr-tgl-t18
+, .gnr-tgl-t19
+{
+	cursor: pointer;
+	font-size: 120%;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.gnr-tgl-c
+, .gnr-toggle-c1
+, .gnr-toggle-c2
+, .gnr-toggle-c3
+, .gnr-toggle-c4
+, .gnr-toggle-c5
+, .gnr-toggle-c6
+, .gnr-toggle-c7
+, .gnr-toggle-c8
+, .gnr-toggle-c9
+, .gnr-toggle-c10
+, .gnr-toggle-c11
+, .gnr-toggle-c12
+, .gnr-toggle-c13
+, .gnr-toggle-c14
+, .gnr-toggle-c15
+, .gnr-toggle-c16
+, .gnr-toggle-c17
+, .gnr-toggle-c18
+, .gnr-toggle-c19
+{
+	margin-left: 10px;
+	padding: 15px 20px;
+}
+
+.gnr-tgl-t:before
+, .gnr-tgl-t1:before
+, .gnr-tgl-t2:before
+, .gnr-tgl-t3:before
+, .gnr-tgl-t4:before
+, .gnr-tgl-t5:before
+, .gnr-tgl-t6:before
+, .gnr-tgl-t7:before
+, .gnr-tgl-t8:before
+, .gnr-tgl-t9:before
+, .gnr-tgl-t10:before
+, .gnr-tgl-t11:before
+, .gnr-tgl-t12:before
+, .gnr-tgl-t13:before
+, .gnr-tgl-t14:before
+, .gnr-tgl-t15:before
+, .gnr-tgl-t16:before
+, .gnr-tgl-t17:before
+, .gnr-tgl-t18:before
+, .gnr-tgl-t19:before
+{
+	border-radius: 3px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 0.5em;
+	transition: .4s;
+	background-color: white;
+	color: seagreen;
+}
+
+.gnr-tgl-t:hover:before
+, .gnr-tgl-t1:hover:before
+, .gnr-tgl-t2:hover:before
+, .gnr-tgl-t3:hover:before
+, .gnr-tgl-t4:hover:before
+, .gnr-tgl-t5:hover:before
+, .gnr-tgl-t6:hover:before
+, .gnr-tgl-t7:hover:before
+, .gnr-tgl-t8:hover:before
+, .gnr-tgl-t9:hover:before
+, .gnr-tgl-t10:hover:before
+, .gnr-tgl-t11:hover:before
+, .gnr-tgl-t12:hover:before
+, .gnr-tgl-t13:hover:before
+, .gnr-tgl-t14:hover:before
+, .gnr-tgl-t15:hover:before
+, .gnr-tgl-t16:hover:before
+, .gnr-tgl-t17:hover:before
+, .gnr-tgl-t18:hover:before
+, .gnr-tgl-t19:hover:before
+{
+	background: seagreen;
+	color: white;
+	transition: .4s;
+}
+
+.gnr-tgl-w .gnr-tgl-c
+, .gnr-tgl-w1 .gnr-tgl-c1
+, .gnr-tgl-w2 .gnr-tgl-c2
+, .gnr-tgl-w3 .gnr-tgl-c3
+, .gnr-tgl-w4 .gnr-tgl-c4
+, .gnr-tgl-w5 .gnr-tgl-c5
+, .gnr-tgl-w6 .gnr-tgl-c6
+, .gnr-tgl-w7 .gnr-tgl-c7
+, .gnr-tgl-w8 .gnr-tgl-c8
+, .gnr-tgl-w9 .gnr-tgl-c9
+, .gnr-tgl-w10 .gnr-tgl-c10
+, .gnr-tgl-w11 .gnr-tgl-c11
+, .gnr-tgl-w12 .gnr-tgl-c12
+, .gnr-tgl-w13 .gnr-tgl-c13
+, .gnr-tgl-w14 .gnr-tgl-c14
+, .gnr-tgl-w15 .gnr-tgl-c15
+, .gnr-tgl-w16 .gnr-tgl-c16
+, .gnr-tgl-w17 .gnr-tgl-c17
+, .gnr-tgl-w18 .gnr-tgl-c18
+, .gnr-tgl-w19 .gnr-tgl-c19
+, .gnr-tgl-w > input[type="checkbox"]
+, .gnr-tgl-w1 > input[type="checkbox"]
+, .gnr-tgl-w2 > input[type="checkbox"]
+, .gnr-tgl-w3 > input[type="checkbox"]
+, .gnr-tgl-w4 > input[type="checkbox"]
+, .gnr-tgl-w5 > input[type="checkbox"]
+, .gnr-tgl-w6 > input[type="checkbox"]
+, .gnr-tgl-w7 > input[type="checkbox"]
+, .gnr-tgl-w8 > input[type="checkbox"]
+, .gnr-tgl-w9 > input[type="checkbox"]
+, .gnr-tgl-w10 > input[type="checkbox"]
+, .gnr-tgl-w11 > input[type="checkbox"]
+, .gnr-tgl-w12 > input[type="checkbox"]
+, .gnr-tgl-w13 > input[type="checkbox"]
+, .gnr-tgl-w14 > input[type="checkbox"]
+, .gnr-tgl-w15 > input[type="checkbox"]
+, .gnr-tgl-w16 > input[type="checkbox"]
+, .gnr-tgl-w17 > input[type="checkbox"]
+, .gnr-tgl-w18 > input[type="checkbox"]
+, .gnr-tgl-w19 > input[type="checkbox"]
+, .gnr-tgl-c > br:first-child
+, .gnr-tgl-c1 > br:first-child
+, .gnr-tgl-c2 > br:first-child
+, .gnr-tgl-c3 > br:first-child
+, .gnr-tgl-c4 > br:first-child
+, .gnr-tgl-c5 > br:first-child
+, .gnr-tgl-c6 > br:first-child
+, .gnr-tgl-c7 > br:first-child
+, .gnr-tgl-c8 > br:first-child
+, .gnr-tgl-c9 > br:first-child
+, .gnr-tgl-c10 > br:first-child
+, .gnr-tgl-c11 > br:first-child
+, .gnr-tgl-c12 > br:first-child
+, .gnr-tgl-c13 > br:first-child
+, .gnr-tgl-c14 > br:first-child
+, .gnr-tgl-c15 > br:first-child
+, .gnr-tgl-c16 > br:first-child
+, .gnr-tgl-c17 > br:first-child
+, .gnr-tgl-c18 > br:first-child
+, .gnr-tgl-c19 > br:first-child
+, #gnr-tgl-b
+, #gnr-tgl-b1
+, #gnr-tgl-b2
+, #gnr-tgl-b3
+, #gnr-tgl-b4
+, #gnr-tgl-b5
+, #gnr-tgl-b6
+, #gnr-tgl-b7
+, #gnr-tgl-b8
+, #gnr-tgl-b9
+, #gnr-tgl-b10
+, #gnr-tgl-b11
+, #gnr-tgl-b12
+, #gnr-tgl-b13
+, #gnr-tgl-b14
+, #gnr-tgl-b15
+, #gnr-tgl-b16
+, #gnr-tgl-b17
+, #gnr-tgl-b18
+, #gnr-tgl-b19
+{
+	display: none;
+}
+
+.gnr-tgl-w > input[type="checkbox"]:checked ~ .gnr-tgl-c
+, .gnr-tgl-w1 > input[type="checkbox"]:checked ~ .gnr-tgl-c1
+, .gnr-tgl-w2 > input[type="checkbox"]:checked ~ .gnr-tgl-c2
+, .gnr-tgl-w3 > input[type="checkbox"]:checked ~ .gnr-tgl-c3
+, .gnr-tgl-w4 > input[type="checkbox"]:checked ~ .gnr-tgl-c4
+, .gnr-tgl-w5 > input[type="checkbox"]:checked ~ .gnr-tgl-c5
+, .gnr-tgl-w6 > input[type="checkbox"]:checked ~ .gnr-tgl-c6
+, .gnr-tgl-w7 > input[type="checkbox"]:checked ~ .gnr-tgl-c7
+, .gnr-tgl-w8 > input[type="checkbox"]:checked ~ .gnr-tgl-c8
+, .gnr-tgl-w9 > input[type="checkbox"]:checked ~ .gnr-tgl-c9
+, .gnr-tgl-w10 > input[type="checkbox"]:checked ~ .gnr-tgl-c10
+, .gnr-tgl-w11 > input[type="checkbox"]:checked ~ .gnr-tgl-c11
+, .gnr-tgl-w12 > input[type="checkbox"]:checked ~ .gnr-tgl-c12
+, .gnr-tgl-w13 > input[type="checkbox"]:checked ~ .gnr-tgl-c13
+, .gnr-tgl-w14 > input[type="checkbox"]:checked ~ .gnr-tgl-c14
+, .gnr-tgl-w15 > input[type="checkbox"]:checked ~ .gnr-tgl-c15
+, .gnr-tgl-w16 > input[type="checkbox"]:checked ~ .gnr-tgl-c16
+, .gnr-tgl-w17 > input[type="checkbox"]:checked ~ .gnr-tgl-c17
+, .gnr-tgl-w18 > input[type="checkbox"]:checked ~ .gnr-tgl-c18
+, .gnr-tgl-w19 > input[type="checkbox"]:checked ~ .gnr-tgl-c19
+{
+  display: block;
+}
+
+.gnr-tgl-w > input[type="checkbox"] ~ .gnr-tgl-t:before
+, .gnr-tgl-w1 > input[type="checkbox"] ~ .gnr-tgl-t1:before
+, .gnr-tgl-w2 > input[type="checkbox"] ~ .gnr-tgl-t2:before
+, .gnr-tgl-w3 > input[type="checkbox"] ~ .gnr-tgl-t3:before
+, .gnr-tgl-w4 > input[type="checkbox"] ~ .gnr-tgl-t4:before
+, .gnr-tgl-w5 > input[type="checkbox"] ~ .gnr-tgl-t5:before
+, .gnr-tgl-w6 > input[type="checkbox"] ~ .gnr-tgl-t6:before
+, .gnr-tgl-w7 > input[type="checkbox"] ~ .gnr-tgl-t7:before
+, .gnr-tgl-w8 > input[type="checkbox"] ~ .gnr-tgl-t8:before
+, .gnr-tgl-w9 > input[type="checkbox"] ~ .gnr-tgl-t9:before
+, .gnr-tgl-w10 > input[type="checkbox"] ~ .gnr-tgl-t10:before
+, .gnr-tgl-w11 > input[type="checkbox"] ~ .gnr-tgl-t11:before
+, .gnr-tgl-w12 > input[type="checkbox"] ~ .gnr-tgl-t12:before
+, .gnr-tgl-w13 > input[type="checkbox"] ~ .gnr-tgl-t13:before
+, .gnr-tgl-w14 > input[type="checkbox"] ~ .gnr-tgl-t14:before
+, .gnr-tgl-w15 > input[type="checkbox"] ~ .gnr-tgl-t15:before
+, .gnr-tgl-w16 > input[type="checkbox"] ~ .gnr-tgl-t16:before
+, .gnr-tgl-w17 > input[type="checkbox"] ~ .gnr-tgl-t17:before
+, .gnr-tgl-w18 > input[type="checkbox"] ~ .gnr-tgl-t18:before
+, .gnr-tgl-w19 > input[type="checkbox"] ~ .gnr-tgl-t19:before
+{
+	content: "＋";
+}
+
+.gnr-tgl-w > input[type="checkbox"]:checked ~ .gnr-tgl-t:before
+, .gnr-tgl-w1 > input[type="checkbox"]:checked ~ .gnr-tgl-t1:before
+, .gnr-tgl-w2 > input[type="checkbox"]:checked ~ .gnr-tgl-t2:before
+, .gnr-tgl-w3 > input[type="checkbox"]:checked ~ .gnr-tgl-t3:before
+, .gnr-tgl-w4 > input[type="checkbox"]:checked ~ .gnr-tgl-t4:before
+, .gnr-tgl-w5 > input[type="checkbox"]:checked ~ .gnr-tgl-t5:before
+, .gnr-tgl-w6 > input[type="checkbox"]:checked ~ .gnr-tgl-t6:before
+, .gnr-tgl-w7 > input[type="checkbox"]:checked ~ .gnr-tgl-t7:before
+, .gnr-tgl-w8 > input[type="checkbox"]:checked ~ .gnr-tgl-t8:before
+, .gnr-tgl-w9 > input[type="checkbox"]:checked ~ .gnr-tgl-t9:before
+, .gnr-tgl-w10 > input[type="checkbox"]:checked ~ .gnr-tgl-t10:before
+, .gnr-tgl-w11 > input[type="checkbox"]:checked ~ .gnr-tgl-t11:before
+, .gnr-tgl-w12 > input[type="checkbox"]:checked ~ .gnr-tgl-t12:before
+, .gnr-tgl-w13 > input[type="checkbox"]:checked ~ .gnr-tgl-t13:before
+, .gnr-tgl-w14 > input[type="checkbox"]:checked ~ .gnr-tgl-t14:before
+, .gnr-tgl-w15 > input[type="checkbox"]:checked ~ .gnr-tgl-t15:before
+, .gnr-tgl-w16 > input[type="checkbox"]:checked ~ .gnr-tgl-t16:before
+, .gnr-tgl-w17 > input[type="checkbox"]:checked ~ .gnr-tgl-t17:before
+, .gnr-tgl-w18 > input[type="checkbox"]:checked ~ .gnr-tgl-t18:before
+, .gnr-tgl-w19 > input[type="checkbox"]:checked ~ .gnr-tgl-t19:before
+{
+	content: "－";
+}
+.gnr-tgl-wrap table {
+	box-shadow: 0px 0px 3px 1px white;
+}
+.gnr-tgl-wrap table th
+, .gnr-tgl-wrap table td {
+	border: 1px solid #eee;
+}
+.gnr-tgl-wrap thead th
+, .gnr-tgl-wrap thead td {
+	color: white;
+	background: #286c28;
+}
+.gnr-tgl-wrap tbody tr:nth-child(even) th
+, .gnr-tgl-wrap tbody tr:nth-child(even) td {
+	color: #2b7e2b;
+	background: white;
+}
+.gnr-tgl-wrap tbody tr:nth-child(odd) th
+, .gnr-tgl-wrap tbody tr:nth-child(odd) td {
+	color: white;
+	background: #2b7e2b;
+}
