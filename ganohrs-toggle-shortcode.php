@@ -3,7 +3,7 @@
 Plugin Name: Ganohr's Toggle Shortcode
 Plugin URI: https://ganohr.net/blog/ganohrs-toggle-shortcode/
 Description: You can insert to WordPress that toggle-code for CSS-based Or details tag. 簡単にCSSベース又はdetailsタグによる折りたたみコードをワードプレスへ追加できます。<strong>Usage（使い方）: </strong> &#091;toggle&nbsp;title="title&nbsp;here"&nbsp;(optional)load="open&nbsp;/&nbsp;close"&nbsp;(optional)suffix="(empty)&nbsp;or&nbsp;1&nbsp;to&nbsp;20&nbsp;or&nbsp;black&nbsp;or&nbsp;details..."&#093;contents&nbsp;here&#091;/toggle&#093;
-Version: 0.2.3
+Version: 0.2.4
 Author: Ganohr
 Author URI: https://ganohr.net/
 License: GPL2

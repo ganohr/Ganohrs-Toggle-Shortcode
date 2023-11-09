@@ -313,6 +313,10 @@ EOF
 			<p>&nbsp;</p>
 			<p>In some cases, it's a good idea to no output CSS and make adjustments from there.</p>
 			<p>場合によっては、CSSを出力しないようにして、そこから調整をすると良いでしょう。</p>
+			<h2>Visual CSS Style Cusomizer / ビジュアル・CSS・スタイルカスタマイザー</h2>
+			<p><a href="https://ganohr.net/blog/ganohrs-toggle-shortcode-style-customizer/" target="_blank" rel="noopener nofollow noreferrer">Visual Style Customizer is here.</a></p>
+			<p>&nbsp;</p>
+			<p><a href="https://ganohr.net/blog/ganohrs-toggle-shortcode-style-customizer/" target="_blank" rel="noopener nofollow noreferrer">簡単にスタイルをカスタマイズできるツールを公開しました</a></p>
 			<?php
 		}
 

@@ -3,9 +3,9 @@ Contributors: Ganohr
 Tags: Toggle,CSS,AMP
 Donate link: http://amzn.asia/gw9HHbg
 Requires at least: 4.0
-Tested up to: 6.3
+Tested up to: 6.4.1
 Requires PHP: 5.0
-Stable tag: 0.2.3
+Stable tag: 0.2.4
 License: GPLv2
 License URI: http://www.opensource.jp/gpl/gpl.ja.html
 
@@ -42,6 +42,7 @@ A. Please chose not named "Details xxx" style.
 
 
 == Changelog ==
+0.2.4 Tested WordPress 6.4.1 ja, append link to css customize tool.
 0.2.3 Tested WordPress 6.3 ja
 0.2.2 Bugfix: Change "Details Default CSS" styles, Append "Replace None Number Suffix".
 0.2.1 Bugfix: Change "Details Default CSS" styles, Append "Replace Number Suffix".
@@ -55,4 +56,4 @@ A. Please chose not named "Details xxx" style.
 
 
 == Upgrade Notice ==
-Tested WordPress 6.3 ja
+Tested WordPress 6.4.1 ja
